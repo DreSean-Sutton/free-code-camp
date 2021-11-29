@@ -5,3 +5,12 @@ function reverseString(str) {
   }
   return reversedStr;
 }
+
+//BETTER FUNCTION BELOW
+
+function reverseString(str) {
+  return str
+    .split("")
+    .reverse()
+    .join("");
+}

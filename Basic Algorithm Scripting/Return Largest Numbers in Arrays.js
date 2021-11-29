@@ -11,3 +11,11 @@ function largestOfFour(arr) {
   }
   return allHighestNums;
 }
+
+//SHORTER VERSION OF FUNCTION BELOW (Not mine, saved for self-referential reasons)
+
+function largestOfFour(arr, finalArr = []) {
+  return !arr.length
+    ? finalArr
+    : largestOfFour(arr.slice(1), finalArr.concat(Math.max(...arr[0])))
+}
