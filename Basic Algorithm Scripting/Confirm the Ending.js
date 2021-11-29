@@ -8,8 +8,6 @@ function confirmEnding(str, target) {
   }
 }
 
-console.log(confirmEnding("Bastian", "n"));
-
 // BETTER FUNCTION BELOW
 
 function confirmEnding(str, target) {
