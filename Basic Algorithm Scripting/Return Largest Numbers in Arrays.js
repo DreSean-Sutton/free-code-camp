@@ -1,5 +1,4 @@
 function largestOfFour(arr) {
-  debugger;
   var allHighestNums = [];
   for (let i = 0; i < arr.length; i++) {
     var highestNum = arr[i][0];
