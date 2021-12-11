@@ -26,8 +26,8 @@ header {
 form {
   margin: 0 5%;
 }
-input {
-  width: 100%;
+input,
+select {
   border-radius: 5px;
 }
 
@@ -48,4 +48,11 @@ input {
 
 .column-half {
   width: 50%;
+}
+
+select,
+#name,
+#email,
+#number {
+  width: 100%;
 }
