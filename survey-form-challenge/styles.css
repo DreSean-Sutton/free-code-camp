@@ -6,7 +6,7 @@ body {
   margin: 0;
   color: white;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .background-image {
@@ -18,7 +18,8 @@ rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(/survey-form-challenge/s
   bottom: 0;
   left: 0;
   right: 0;
-
+  background-size: cover;
+  background-position: center;
 }
 
 p {
@@ -28,6 +29,7 @@ p {
 header,
 form {
   justify-content: center;
+  margin: 0 2rem;
 }
 
 header {
@@ -43,7 +45,8 @@ header > div > p {
 }
 
 form {
-  margin: 2rem 2rem;
+  margin-top 2rem;
+  margin-bottom: 2rem;
   padding: 2rem  2.5rem 4rem;
   border-radius: 5px;
   background-color: rgba(45,43,70, 0.85);
@@ -97,7 +100,7 @@ textarea:focus {
 }
 
 .container {
-  max-width: 780px;
+  max-width: 800px;
   margin: auto;
 }
 
@@ -113,14 +116,18 @@ textarea:focus {
   width: 50%;
 }
 
-.margin-0 {
-  margin-bottom: 0;
-}
-
 select,
 button,
 #name,
 #email,
 #number {
   width: 100%;
+}
+
+@media screen and (max-width: 580px) {
+  header,
+  form {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
