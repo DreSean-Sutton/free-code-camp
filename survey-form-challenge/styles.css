@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+
+.background-image {
+  background:  linear-gradient(
+rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+p {
+  margin: 0 0 0.65rem;;
+}
+
+header,
+form {
+  justify-content: center;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+header {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+header > div > p {
+  font-weight: 100;
+  font-style: italic;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0 / 40%);
+  letter-spacing: 0.5px;
+}
+
+form {
+  margin-top 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem  2.5rem 4rem;
+  border-radius: 5px;
+  background-color: rgba(45,43,70, 0.85);
+}
+
+section {
+  padding: 0.5rem 0 1rem 0;
+}
+
+input,
+select {
+  padding: 0.7rem 0 0.7rem 0.65rem;
+  border-radius: 0.25rem;
+  font-size: 1.25rem;
+}
+
+label {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+  align-items: center;
+}
+
+textarea {
+  width: 100%;
+  resize: vertical;
+  min-height: 3.5rem;
+  padding: 0.65rem;
+  font-size: 1.15rem;
+}
+
+button {
+  margin-top: 2rem;
+  background-color: rgb(0, 175, 67);
+  color: white;
+  padding: 1rem 0;
+  border-radius: 3px;
+  font-size: 16px;
+  border: 0px solid
+}
+
+textarea:focus {
+  border: 2px solid black;
+}
+
+#radio > label > input,
+#checkbox > label > input {
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+  margin-right: 0.5rem;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.column-full {
+  width: 100%;
+}
+
+.column-half {
+  width: 50%;
+}
+
+select,
+button,
+#name,
+#email,
+#number {
+  width: 100%;
+}
+
+@media all and (min-width: 576px) {
+  header,
+  form {
+    margin: 0 1rem;
+  },
+  .container {
+    max-width: 550px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  header,
+  form {
+    margin: 0 2rem;
+  },
+  .container {
+    max-width: 740px;
+  }
+}
