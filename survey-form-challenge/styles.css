@@ -25,17 +25,39 @@ header {
 
 form {
   margin: 0 5%;
+  padding-bottom: 4rem;
+  border-radius: 5px;
 }
 input,
 select {
   border-radius: 5px;
+  padding: 0.5rem 0;
 }
 
+textarea {
+  width: 100%;
+  resize: vertical;
+  min-height: 3.5rem;
+}
+
+button {
+  width: 100%;
+  margin-top: 2rem;
+  background-color: rgb(0, 175, 67);
+  color: white;
+  padding: 0.7rem 0;
+  border-radius: 3px;
+  font-size: 16px;
+  border: 0px solid
+}
+
+textarea:focus {
+  border: 2px solid black
+}
 .container {
   max-width: 50vw;
   margin: auto;
   background-color: rgb(122, 4, 138);
-  border-radius: 5px;
 }
 
 .row {
