@@ -42,11 +42,54 @@
     += the value of 'I' to romanNumeral
     subtract i by 1
 -return romanNumeral from the function
-    */
+*/
 
 function convertToRoman(num) {
+  let romanNumeral = '';
 
-  return romanNumeral
+  for(let i = num; i > 0;) {
+    if (i >= 1000) {
+      romanNumeral += 'M';
+      i -= 1000;
+    }  else if (i >= 900) {
+      romanNumeral += 'CM';
+      i -= 900;
+    } else if (i >= 500) {
+      romanNumeral += 'D';
+      i -= 500;
+    } else if (i >= 400) {
+      romanNumeral += 'CD';
+      i -= 400;
+    } else if (i >= 100) {
+      romanNumeral += 'C';
+      i -= 100;
+    } else if (i >= 90) {
+      romanNumeral += 'XC';
+      i -= 90;
+    } else if (i >= 50) {
+      romanNumeral += 'L';
+      i -= 50;
+    } else if (i >= 40) {
+      romanNumeral += 'XL';
+      i -= 40;
+    } else if (i >= 10) {
+      romanNumeral += 'X';
+      i -= 10;
+    } else if (i >= 9) {
+      romanNumeral += 'IX';
+      i -= 9;
+    } else if (i >= 5) {
+      romanNumeral += 'V';
+      i -= 5;
+    } else if (i >= 4) {
+      romanNumeral += 'IV';
+      i -= 4;
+    } else if (i >= 1) {
+      romanNumeral += 'I';
+      i -= 1;
+    }
+  }
+    return romanNumeral
 }
 
 convertToRoman(36);
