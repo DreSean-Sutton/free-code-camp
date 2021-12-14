@@ -39,6 +39,15 @@ form {
   text-align: center;
 }
 
+i {
+  color: rgb(255,140,0);
+  font-size: 3em;
+}
+
+.icon {
+  justify-content: center;
+  align-items: center;
+}
 [type="submit"] {
   background-color: rgb(241,196,15);
   font-size: 20px;
@@ -54,6 +63,9 @@ form {
   font-size: 15px;
 }
 
+#features {
+  margin: 0;
+}
 .container {
   max-width: 1200px;
   width: 100%;
@@ -68,18 +80,38 @@ form {
   width: 100%;
 }
 
-.column-half {
-  width: 50%;
+.column-nine-tenth {
+  width: 90%;
 }
 
-.column-one-fourth {
-  width: 25%;
+.column-half {
+  width: 50%;
 }
 
 .column-one-third {
   width: calc(100%/3);
 }
 
+.column-one-fourth {
+  width: 25%;
+}
+
 .column-two-tenth {
   width: 20%;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.feature-h2-margin {
+  margin-bottom: 0;
+}
+
+.feature-p-margin {
+  margin-top: 0.25rem;
 }
