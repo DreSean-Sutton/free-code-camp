@@ -32,12 +32,20 @@ a {
   font-size: 18px;
 }
 
+h2 {
+  font-size: 30px;
+}
 form {
   text-align: center;
 }
 
 [type="submit"] {
   background-color: rgb(241,196,15);
+  font-size: 20px;
+  font-weight: 900;
+  width: 15%;
+  border: 0px;
+  padding: 0.25rem 0;
 }
 
 #email {
