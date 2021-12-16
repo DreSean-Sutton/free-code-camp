@@ -4,22 +4,32 @@
 
 body {
   margin: 0;
+  'Lato', sans-serif;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 2rem 3rem 2rem 2rem;
+  position: fixed;
+  top: 0;
+  height: 5rem;
+  margin: 0 3rem 0 2rem;
+  background-color: white;
+
 }
 
 header > img {
-  width: 30%;
+  width: 20%;
 }
 
-header > nav > ul {
-  display: flex;
-  list-style-type: none;
+section {
+  margin: 2rem 0;
+}
+
+section[id="pricing"] {
+  justify-content: center;
+  text-align: center;
 }
 
 li {
@@ -30,13 +40,16 @@ a {
   color: black;
   text-decoration: none;
   font-size: 18px;
+  margin-left: 2.5rem;
 }
 
 h2 {
   font-size: 30px;
 }
+
 form {
   text-align: center;
+  margin: 5rem 0 3rem;
 }
 
 i {
@@ -44,28 +57,84 @@ i {
   font-size: 3em;
 }
 
+#nav-bar > ul {
+  display: flex;
+  list-style-type: none;
+}
+
 .icon {
   justify-content: center;
   align-items: center;
 }
-[type="submit"] {
+
+#submit {
   background-color: rgb(241,196,15);
-  font-size: 20px;
-  font-weight: 900;
-  width: 15%;
   border: 0px;
-  padding: 0.25rem 0;
+  border-radius: 3px;
+  padding: 0.15rem 0;
+  font-size: 18px;
+  font-weight: 800;
+  width: 15%;
+}
+
+#submit:hover {
+  background-color:rgb(255, 171, 92);
+  transition: 1s;
 }
 
 #email {
-  padding: 0.4rem 9rem 0.4rem 0.5rem;
+  padding: 0.3rem 8rem 0.3rem 0.5rem;
   margin-bottom: 1rem;
   font-size: 15px;
+  border-radius: 2px;
+  border: 0.8px solid rgb(184, 184, 184);
 }
 
+#email:focus {
+  border: 1px solid rgb(184, 184, 184)
+}
 #features {
   margin: 0;
 }
+
+#video {
+  max-width: 600px;
+  width: 100%;
+}
+
+#pricing > div > button {
+  background-color: rgb(241,196,15);
+  border: 0px;
+  border-radius: 3px;
+  font-weight: 100;
+  font-size: 18px;
+  padding: 0.6rem 1.8rem;
+  margin: 1.5rem;
+}
+
+#pricing > div > button:hover {
+  background-color:rgb(255, 171, 92);
+  transition: 1s;
+}
+
+.pricing-layout {
+  border: 1px solid black;
+  margin: 3rem 1rem 1rem;
+  border-radius: 3px;
+}
+
+.pricing-layout > h3 {
+  background-color: #DDDDDD;
+  margin: 0;
+  padding: 1rem 0;
+  font-size: 22px;
+}
+
+.pricing-layout > p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .container {
   max-width: 1200px;
   width: 100%;
@@ -92,6 +161,10 @@ i {
   width: calc(100%/3);
 }
 
+.column-three-tenth {
+  width: 30%;
+}
+
 .column-one-fourth {
   width: 25%;
 }
@@ -113,5 +186,5 @@ i {
 }
 
 .feature-p-margin {
-  margin-top: 0.25rem;
+  margin: 0.25rem 0 3rem;
 }
