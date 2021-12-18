@@ -1,0 +1,23 @@
+.container {
+  width: 1000px;
+}
+
+.row {
+  display: flex;
+}
+
+.column-full {
+  width: 100%
+}
+
+.column-half {
+  width: 50%
+}
+
+.column-one-fourth {
+  width: 25%;
+}
+
+.column-one-tenth {
+  width: 10%;
+}
