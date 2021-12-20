@@ -1,3 +1,28 @@
+/* Remember CSS overflow for the nav bar box */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+nav:first-child {
+  text-align: center;
+  width: 100vw;
+  overflow: scroll;
+  height: 120px;
+}
+.navbar-list {
+  list-style-type: none;
+  width: 100vw;
+  border: 1px solid black;
+}
+
+.navbar-list > a {
+  text-decoration: none;
+  color: black;
+}
+
 .container {
   width: 1000px;
 }
