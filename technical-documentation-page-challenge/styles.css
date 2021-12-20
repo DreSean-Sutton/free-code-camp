@@ -7,11 +7,11 @@ body {
 }
 
 nav:first-child {
-  text-align: center;
   width: 100vw;
   overflow: scroll;
-  height: 120px;
+  height: 240px;
 }
+
 .navbar-list {
   list-style-type: none;
   width: 100vw;
@@ -21,6 +21,8 @@ nav:first-child {
 .navbar-list > a {
   text-decoration: none;
   color: black;
+  font-size: 1.3em;
+  padding: 0 5rem;
 }
 
 .container {
