@@ -10,21 +10,19 @@ body {
 h1 {
   text-align: center;
 }
-nav:first-child {
+
+#navbar > ul {
   width: 100%;
   overflow: auto;
   height: 240px;
-}
-
-#navbar > ul {
   padding: 0;
 }
 
 .navbar-list {
   list-style-type: none;
-  width: 500px;
+  max-width: 100%;
   border: 1px solid black;
-  padding: 1rem 0;
+  padding: 0.75rem 0;
 }
 
 .navbar-list:first-child {
