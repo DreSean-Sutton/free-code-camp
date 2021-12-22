@@ -12,6 +12,7 @@ body {
 h1 {
   text-align: center;
   font-weight: 200;
+  margin-top: 2rem;
 }
 
 h2 {
@@ -30,6 +31,29 @@ p {
 
 ul {
   margin-left: 2rem;
+}
+
+code {
+  /* display: block;
+  background-color: rgb(247,247,247);
+  padding: 1rem;
+  line-height: 2;
+  white-space: pre-line;
+  text-align: left;
+  word-break: normal;
+  word-wrap: normal;
+  margin-left: 1rem; */
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
 }
 
 #navbar-header {
