@@ -45,15 +45,11 @@ li {
   margin-bottom: 1rem;
 }
 
-a {
-  display: block;
-  padding: 0.75rem 0;
-}
-
 .navbar-list:hover {
   transition-duration: 0.2s;
   background-color:rgb(151, 150, 150)
 }
+
 code {
   display: block;
   background-color: rgb(247,247,247);
@@ -66,10 +62,14 @@ code {
   margin: 1rem 0 1rem 0.75rem;
   border-radius: 5px;
 }
-
 #navbar {
   height: 100%;
 }
+
+#navbar > header {
+  height: 100%;
+}
+
 #navbar-header {
   width: 100%;
   overflow: auto;
@@ -90,10 +90,12 @@ code {
 }
 
 .navbar-list > a {
+  display: block;
   text-decoration: none;
   color: black;
   font-size: 1.1em;
   margin-left: 1.5rem;
+  padding: 0.75rem 0;
 }
 
 @media screen and (min-width: 810px) {
