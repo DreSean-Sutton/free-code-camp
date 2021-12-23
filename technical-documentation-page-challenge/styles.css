@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'open sans', arial, sans-serif;
+  line-height: 1.5;
+}
+
+main {
+  margin-bottom: 9rem;
+}
+h1 {
+  text-align: center;
+  font-weight: 200;
+  margin-top: 2rem;
+}
+
+h2 {
+  font-size: 1.8em;
+  font-weight: 200;
+}
+
+section {
+  margin-left: 2rem;
+  margin-right: 3rem;
+}
+
+p {
+  margin: 1rem;
+}
+
+ul {
+  margin-left: 2rem;
+}
+
+ul > ul {
+  margin-left: 1.5rem;
+}
+
+li {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.navbar-list:hover {
+  transition-duration: 0.2s;
+  background-color:rgb(151, 150, 150)
+}
+
+code {
+  display: block;
+  background-color: rgb(247,247,247);
+  padding: 1rem;
+  line-height: 2;
+  white-space: pre-line;
+  text-align: left;
+  word-break: normal;
+  word-wrap: normal;
+  margin: 1rem 0 1rem 0.75rem;
+  border-radius: 5px;
+}
+#navbar {
+  height: 100%;
+}
+
+#navbar > header {
+  height: 100%;
+}
+
+#navbar-header {
+  width: 100%;
+  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 240px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid black;
+  border-left: 0;
+}
+
+.navbar-list {
+  list-style-type: none;
+  max-width: 100%;
+  border: 1px solid black;
+  margin: 0;
+}
+
+.navbar-list > a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-size: 1.1em;
+  margin-left: 1.5rem;
+  padding: 0.75rem 0;
+}
+
+@media screen and (min-width: 810px) {
+  main {
+    margin-left: 330px;
+  }
+
+  #header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 310px;
+    height: 100%;
+  }
+
+  #navbar-header {
+    height: 86%;
+  }
+
+  #header {
+    border-right: solid;
+    border-color: rgb(151, 150, 150);
+  }
+}
