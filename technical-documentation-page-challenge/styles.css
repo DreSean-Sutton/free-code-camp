@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'open sans', arial, sans-serif;
-  line-height: 1.5rem;
+  line-height: 1.5;
 }
 
 h1 {
@@ -26,15 +26,24 @@ section {
 }
 
 p {
-  margin: 1rem 5%;
+  margin: 1rem 3%;
 }
 
 ul {
   margin-left: 2rem;
 }
 
+ul > ul {
+  margin-left: 1.5rem;
+}
+
+li {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 code {
-  /* display: block;
+  display: block;
   background-color: rgb(247,247,247);
   padding: 1rem;
   line-height: 2;
@@ -42,17 +51,7 @@ code {
   text-align: left;
   word-break: normal;
   word-wrap: normal;
-  margin-left: 1rem; */
-  display: block;
-  text-align: left;
-  white-space: pre-line;
-  position: relative;
-  word-break: normal;
-  word-wrap: normal;
-  line-height: 2;
-  background-color: #F7F7F7;
-  padding: 15px;
-  margin: 10px;
+  margin: 1rem 0 1rem 0.75rem;
   border-radius: 5px;
 }
 
