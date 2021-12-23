@@ -29,7 +29,7 @@ section {
 }
 
 p {
-  margin: 1rem 3%;
+  margin: 1rem;
 }
 
 ul {
@@ -45,6 +45,15 @@ li {
   margin-bottom: 1rem;
 }
 
+a {
+  display: block;
+  padding: 0.75rem 0;
+}
+
+.navbar-list:hover {
+  transition-duration: 0.2s;
+  background-color:rgb(151, 150, 150)
+}
 code {
   display: block;
   background-color: rgb(247,247,247);
@@ -58,9 +67,14 @@ code {
   border-radius: 5px;
 }
 
+#navbar {
+  height: 100%;
+}
 #navbar-header {
   width: 100%;
   overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   height: 240px;
   padding: 0;
   margin: 0;
@@ -72,7 +86,6 @@ code {
   list-style-type: none;
   max-width: 100%;
   border: 1px solid black;
-  padding: 0.75rem 0;
   margin: 0;
 }
 
@@ -83,26 +96,25 @@ code {
   margin-left: 1.5rem;
 }
 
-.container {
-  width: 100%;
-}
+@media screen and (min-width: 810px) {
+  main {
+    margin-left: 330px;
+  }
 
-.row {
-  display: flex;
-}
+  #header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 310px;
+    height: 100%;
+  }
 
-.column-full {
-  width: 100%
-}
+  #navbar-header {
+    height: 86%;
+  }
 
-.column-half {
-  width: 50%
-}
-
-.column-one-fourth {
-  width: 25%;
-}
-
-.column-one-tenth {
-  width: 10%;
+  #header {
+    border-right: solid;
+    border-color: rgb(151, 150, 150);
+  }
 }
